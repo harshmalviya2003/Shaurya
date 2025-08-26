@@ -70,7 +70,6 @@ export default function HowItWorks() {
           {steps.map((step, index) => (
             <motion.div
               key={step.title}
-              className="text-center group"
               initial={{ opacity: 0, y: 50 }}
               className="w-24 h-24 mx-auto mb-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl flex items-center justify-center border border-gray-700 group-hover:border-orange-500/50 transition-all duration-300 relative overflow-hidden"
               whileHover={{ scale: 1.1, y: -10, rotateY: 15 }}

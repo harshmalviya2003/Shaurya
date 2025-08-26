@@ -1,0 +1,127 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { Menu, X, Phone } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navItems = [
+    { name: 'How it works', href: '#how-it-works' },
+    { name: 'Benefits', href: '#benefits' },
+    { name: 'Services', href: '#services' },
+    { name: 'Pricing', href: '#pricing' },
+    { name: 'Portfolio', href: '#portfolio' },
+  ];
+
+  return (
+    <motion.header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? 'bg-black/80 backdrop-blur-lg border-b border-white/10'
+          : 'bg-transparent'
+      }`}
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <motion.div
+            className="text-2xl font-bold text-white"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
+            zyner
+          </motion.div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-8">
+            {navItems.map((item, index) => (
+              <motion.a
+                key={item.name}
+                href={item.href}
+                className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 * index }}
+                whileHover={{ y: -2 }}
+              >
+                {item.name}
+              </motion.a>
+            ))}
+          </nav>
+
+          {/* Contact Info & CTA */}
+          <div className="hidden lg:flex items-center space-x-6">
+            <div className="flex items-center space-x-2 text-sm">
+              <div className="flex items-center text-gray-300">
+                <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                Online
+              </div>
+              <span className="text-gray-400">+1 415 727 5880</span>
+            </div>
+            <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105">
+              Book a call
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden text-white p-2"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <motion.div
+            className="lg:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-lg border-b border-white/10"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+          >
+            <div className="px-4 py-6 space-y-4">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="block text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+              ))}
+              <div className="pt-4 border-t border-white/10">
+                <div className="flex items-center space-x-2 text-sm mb-4">
+                  <div className="flex items-center text-gray-300">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                    Online
+                  </div>
+                  <span className="text-gray-400">+1 415 727 5880</span>
+                </div>
+                <Button className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white py-2 rounded-full text-sm font-medium">
+                  Book a call
+                </Button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </div>
+    </motion.header>
+  );
+}

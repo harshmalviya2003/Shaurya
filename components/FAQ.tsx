@@ -10,44 +10,44 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: 'Why hire a full-time designer when I can use your service?',
-      answer: 'Hiring a full-time senior designer costs over $100,000 annually, plus benefits, equipment, and management overhead. Our service gives you access to senior-level design talent at a fraction of the cost, with the flexibility to pause or cancel anytime.'
+      question: 'What AI technologies do you specialize in?',
+      answer: 'I specialize in OpenAI API integration, LangChain, TensorFlow, PyTorch, and custom AI model development. I\'ve built chatbots, recommendation systems, and automated workflows for various industries.'
     },
     {
-      question: 'Can I submit unlimited design requests?',
-      answer: 'Yes! Once subscribed, you can add as many design requests to your queue as you\'d like. We\'ll work through them one by one, delivering each with unlimited revisions until you\'re 100% satisfied.'
+      question: 'What is your experience with full-stack development?',
+      answer: 'With 5+ years of experience, I\'ve built complete applications using React, Next.js, Node.js, Python, and various databases. I handle everything from frontend UI to backend APIs and database design.'
     },
     {
-      question: 'How quickly will I receive my designs?',
-      answer: 'Most requests are completed within 1-3 business days on average. More complex projects may take longer, but we always communicate timelines upfront and provide daily updates on progress.'
+      question: 'How quickly can you deliver AI integration projects?',
+      answer: 'Simple AI integrations can be completed in 1-2 weeks, while complex projects typically take 4-8 weeks. I always provide detailed timelines upfront and keep you updated throughout the process.'
     },
     {
-      question: 'Who will be designing my requests?',
-      answer: 'Your designs will be created by our team of senior designers with 5+ years of experience. Each designer has worked with startups and understands the unique needs of fast-growing companies.'
+      question: 'Do you provide ongoing support and maintenance?',
+      answer: 'Yes! I offer comprehensive support packages including AI model monitoring, performance optimization, and regular updates. I also provide training for your team to manage the systems.'
     },
     {
-      question: 'How does the subscription pause feature work?',
-      answer: 'You can pause your subscription at any time and resume it later. This is perfect for when you have lighter design needs or want to take a break. Your remaining time carries over when you resume.'
+      question: 'What industries have you worked with?',
+      answer: 'I\'ve worked across fintech, healthcare, e-commerce, and SaaS industries. My AI solutions have helped companies automate customer service, optimize operations, and gain data-driven insights.'
     },
     {
-      question: 'What design tools do you use?',
-      answer: 'We primarily use Figma for all design work, ensuring easy collaboration and file sharing. We also work with Adobe Creative Suite, Sketch, and other industry-standard tools as needed.'
+      question: 'Can you integrate AI with existing systems?',
+      answer: 'Absolutely! I specialize in integrating AI capabilities with legacy systems, APIs, and databases. I ensure seamless integration without disrupting your current workflow.'
     },
     {
-      question: 'What\'s the process for requesting designs?',
-      answer: 'Simply submit your request through our project management system with as much detail as possible. We\'ll ask clarifying questions if needed, then get to work. You\'ll receive regular updates and can request revisions at any time.'
+      question: 'What\'s your approach to AI project development?',
+      answer: 'I follow a structured approach: requirements analysis, AI model selection, development with regular check-ins, testing, deployment, and ongoing optimization based on real-world performance.'
     },
     {
-      question: 'What if I don\'t satisfied with the designs?',
-      answer: 'We offer unlimited revisions until you\'re 100% happy with the result. If for any reason you\'re not satisfied, we also offer a money-back guarantee within the first 14 days.'
+      question: 'Do you offer custom AI model training?',
+      answer: 'Yes, I can train custom AI models for specific use cases when off-the-shelf solutions aren\'t sufficient. This includes data preparation, model training, and deployment.'
     },
     {
-      question: 'Are there any types of design work you do not handle?',
-      answer: 'We handle most design requests including web design, mobile apps, branding, marketing materials, and more. We don\'t typically handle 3D modeling, complex animations, or print production work.'
+      question: 'What security measures do you implement for AI systems?',
+      answer: 'I implement enterprise-grade security including data encryption, secure API endpoints, access controls, and compliance with industry standards like GDPR and HIPAA where applicable.'
     },
     {
-      question: 'What if I have up one design request?',
-      answer: 'No problem! You can submit requests one at a time or build up a queue. We work on one request at a time to ensure quality and focus, but you can always add more to your queue.'
+      question: 'How do you ensure AI system reliability?',
+      answer: 'I build robust error handling, monitoring, and fallback systems. All AI integrations include comprehensive testing, performance monitoring, and automated alerting for issues.'
     }
   ];
 
@@ -81,7 +81,7 @@ export default function FAQ() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Questions are fear, answered!
+            Everything you need to know about AI integration and development!
           </motion.p>
         </div>
 
@@ -134,7 +134,7 @@ export default function FAQ() {
           viewport={{ once: true }}
         >
           <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-orange-500/25 mb-4">
-            Book a call with Sehan
+            Start Your AI Project
           </Button>
         </motion.div>
       </div>

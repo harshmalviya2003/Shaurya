@@ -5,22 +5,22 @@ import AutoScrollMarquee from './AutoScrollMarquee';
 
 export default function SkillsMarquee() {
   const skills = [
+    { name: 'Python', icon: '🐍' },
+    { name: 'TensorFlow', icon: '🧠' },
+    { name: 'PyTorch', icon: '🔥' },
+    { name: 'OpenAI API', icon: '🤖' },
+    { name: 'LangChain', icon: '🔗' },
     { name: 'React', icon: '⚛️' },
     { name: 'Next.js', icon: '🔺' },
-    { name: 'TypeScript', icon: '📘' },
     { name: 'Node.js', icon: '🟢' },
-    { name: 'Python', icon: '🐍' },
-    { name: 'JavaScript', icon: '💛' },
-    { name: 'CSS3', icon: '🎨' },
-    { name: 'HTML5', icon: '🌐' },
+    { name: 'TypeScript', icon: '📘' },
     { name: 'MongoDB', icon: '🍃' },
     { name: 'PostgreSQL', icon: '🐘' },
     { name: 'Docker', icon: '🐳' },
     { name: 'AWS', icon: '☁️' },
     { name: 'Git', icon: '📚' },
     { name: 'Figma', icon: '🎯' },
-    { name: 'Photoshop', icon: '🖼️' },
-    { name: 'Illustrator', icon: '🎭' }
+    { name: 'Jupyter', icon: '📊' }
   ];
 
   return (

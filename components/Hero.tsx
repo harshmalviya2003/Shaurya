@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { Star, Check, User, ArrowDown, Sparkles } from 'lucide-react';
+import { Star, Check, User, ArrowDown, Sparkles, Brain, Code, Zap } from 'lucide-react';
 import AutoScrollMarquee from './AutoScrollMarquee';
 
 export default function Hero() {
@@ -11,7 +11,7 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]); // Fade out on scroll for parallax effect
 
   const testimonialAvatars = [
-    { name: 'John', image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop' },
+    { name: 'Alex', image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop' },
     { name: 'Sarah', image: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop' },
     { name: 'Mike', image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop' },
     { name: 'Lisa', image: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop' },
@@ -19,15 +19,15 @@ export default function Hero() {
   ];
 
   const features = [
-    'Dedicated Senior Talent',
-    'Updates Every 24 Hours',
-    'Pause or Cancel Anytime',
+    'AI Integration Expert',
+    'Full-Stack Development',
+    '5+ Years Experience',
   ];
 
   const companies = [
     { name: 'Google', logo: '🔍' },
     { name: 'Microsoft', logo: '🪟' },
-    { name: 'Apple', logo: '🍎' },
+    { name: 'OpenAI', logo: '🤖' },
     { name: 'Meta', logo: '📘' },
     { name: 'Netflix', logo: '🎬' },
     { name: 'Spotify', logo: '🎵' },
@@ -130,7 +130,7 @@ export default function Hero() {
                   </motion.div>
                 ))}
               </div>
-              <p className="text-gray-300 text-sm font-medium">Loved by founders worldwide</p>
+              <p className="text-gray-300 text-sm font-medium">Trusted by tech leaders worldwide</p>
             </div>
           </motion.div>
 
@@ -141,23 +141,23 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Creative{' '}
+            AI{' '}
             <motion.span
               className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"
               animate={{ backgroundPosition: ['0% 50%', '100% 50%'] }}
               transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
               style={{ backgroundSize: '200% 200%' }}
             >
-              Portfolio
+              Integration
             </motion.span>
-            {' '}& Digital{' '}
+            {' '}& Full-Stack{' '}
             <motion.span
               className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
               animate={{ backgroundPosition: ['0% 50%', '100% 50%'] }}
               transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
               style={{ backgroundSize: '200% 200%' }}
             >
-              Experience
+              Development
             </motion.span>
           </motion.h1>
 
@@ -169,9 +169,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <p className="text-xl text-gray-200 mb-6 leading-relaxed">
-              Crafting beautiful digital experiences with modern design and cutting-edge technology.
+              Transforming businesses with cutting-edge AI solutions and robust full-stack applications.
               <br />
-              Transforming ideas into stunning visual realities.
+              Building the future, one intelligent system at a time.
             </p>
           </motion.div>
 
@@ -191,7 +191,9 @@ export default function Hero() {
                 transition={{ delay: 0.9 + index * 0.1 }}
                 whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,255,255,0.15)' }}
               >
-                <Check className="w-5 h-5 text-orange-400 animate-pulse" />
+                {index === 0 && <Brain className="w-5 h-5 text-orange-400 animate-pulse" />}
+                {index === 1 && <Code className="w-5 h-5 text-blue-400 animate-pulse" />}
+                {index === 2 && <Zap className="w-5 h-5 text-purple-400 animate-pulse" />}
                 <span className="text-sm font-medium">{feature}</span>
               </motion.div>
             ))}
@@ -207,10 +209,10 @@ export default function Hero() {
             <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-110 shadow-2xl hover:shadow-orange-500/50 relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-r from-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <Avatar className="w-6 h-6 mr-3 shadow-sm">
-                <AvatarImage src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Sehan" />
-                <AvatarFallback>S</AvatarFallback>
+                <AvatarImage src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Shourya" />
+                <AvatarFallback>SS</AvatarFallback>
               </Avatar>
-              <span className="relative z-10">Let's Work Together</span>
+              <span className="relative z-10">Let's Build Something Amazing</span>
               <Sparkles className="w-5 h-5 ml-2 animate-spin text-yellow-300" />
             </Button>
           </motion.div>

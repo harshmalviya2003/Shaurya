@@ -3,24 +3,24 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { RefreshCw, FileText, Rocket } from 'lucide-react';
+import { Brain, Code, Rocket } from 'lucide-react';
 
 export default function HowItWorks() {
   const steps = [
     {
-      icon: RefreshCw,
-      title: 'Subscribe & Request',
-      description: 'Subscribe to a plan & enjoy unlimited design requests.',
+      icon: Brain,
+      title: 'AI Analysis & Planning',
+      description: 'Deep analysis of your requirements with AI-powered insights and strategic planning.',
     },
     {
-      icon: FileText,
-      title: 'Receive & Revisions',
-      description: 'Receive your design within 1-3 days on average & revise until you\'re 100% satisfied!',
+      icon: Code,
+      title: 'Development & Integration',
+      description: 'Full-stack development with seamless AI integration and modern tech stack implementation.',
     },
     {
       icon: Rocket,
-      title: 'Focus & build!',
-      description: 'Focus on your startup while we get all the creative work done.',
+      title: 'Deployment & Optimization',
+      description: 'Production deployment with continuous monitoring and AI model optimization.',
     },
   ];
 
@@ -72,8 +72,8 @@ export default function HowItWorks() {
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Top-notch Designs,<br />
-            Simplified Process
+            AI-Powered Solutions,<br />
+            Seamless Development
           </motion.h2>
           <motion.p
             className="text-xl text-gray-300 max-w-2xl mx-auto"
@@ -82,7 +82,7 @@ export default function HowItWorks() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            A simple process leads to satisfaction.
+            From concept to deployment, we leverage AI to deliver exceptional results.
           </motion.p>
         </div>
 
@@ -136,10 +136,10 @@ export default function HowItWorks() {
           <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-orange-500/30 relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <Avatar className="w-6 h-6 mr-3 relative z-10">
-              <AvatarImage src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Sehan" />
-              <AvatarFallback>S</AvatarFallback>
+              <AvatarImage src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Shourya" />
+              <AvatarFallback>SS</AvatarFallback>
             </Avatar>
-            <span className="relative z-10">Book a call with Sehan</span>
+            <span className="relative z-10">Start Your AI Project</span>
           </Button>
         </motion.div>
       </div>

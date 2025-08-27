@@ -6,22 +6,22 @@ import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'luc
 export default function Footer() {
   const navigationLinks = [
     { name: 'How it works', href: '#how-it-works' },
-    { name: 'Benefits', href: '#benefits' },
     { name: 'Services', href: '#services' },
-    { name: 'Pricing', href: '#pricing' },
     { name: 'Portfolio', href: '#portfolio' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Contact', href: '#contact' },
     { name: 'Blog', href: '#blog' },
-    { name: 'Careers', href: '#careers' },
+    { name: 'Resume', href: '#resume' },
   ];
 
   const infoLinks = [
-    { name: 'XL Client', href: '#' },
+    { name: 'AI Integration', href: '#' },
     { name: 'Privacy Policy', href: '#' },
     { name: 'Terms & Conditions', href: '#' },
     { name: 'Services', href: '#' },
-    { name: 'Pricing', href: '#' },
-    { name: 'FAQs', href: '#' },
     { name: 'Portfolio', href: '#' },
+    { name: 'FAQs', href: '#' },
+    { name: 'Case Studies', href: '#' },
   ];
 
   return (
@@ -36,24 +36,24 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="text-2xl font-bold text-white mb-4">zyner</div>
+            <div className="text-2xl font-bold text-white mb-4">Shourya Sharma</div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-md">
-              Unlimited designs & revisions with dedicated senior talent, daily updates, and the freedom to pause or cancel anytime for years.
+              AI Integration Specialist & Full-Stack Developer with 5+ years of experience. Transforming businesses through intelligent automation and robust web applications.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4 text-orange-500 flex-shrink-0" />
-                <span>61 Montgomery St, San Francisco, CA 94104, United States</span>
+                <span>Mumbai, Maharashtra, India</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400 text-sm">
                 <Phone className="w-4 h-4 text-orange-500 flex-shrink-0" />
-                <span>+1 (415) 727 5880</span>
+                <span>+91 98765 43210</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400 text-sm">
                 <Mail className="w-4 h-4 text-orange-500 flex-shrink-0" />
-                <span>hello@zyner.co</span>
+                <span>shourya.sharma@email.com</span>
               </div>
             </div>
           </motion.div>
@@ -87,7 +87,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-white font-semibold mb-4">Info</h3>
+            <h3 className="text-white font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               {infoLinks.map((link) => (
                 <li key={link.name}>
@@ -112,7 +112,7 @@ export default function Footer() {
           viewport={{ once: true }}
         >
           <div className="text-gray-400 text-sm mb-4 sm:mb-0">
-            Made with ❤️ by San Francisco | Copyright © 2025
+            Made with ❤️ by Shourya Sharma | Copyright © 2025
           </div>
           <div className="flex items-center space-x-4">
             <a

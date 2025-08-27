@@ -1,16 +1,16 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Sparkles, Star, Zap, Heart, Code, Palette } from 'lucide-react';
+import { Sparkles, Star, Zap, Heart, Code, Brain, Cpu, Database } from 'lucide-react';
 
 export default function FloatingElements() {
   const elements = [
-    { Icon: Sparkles, delay: 0, x: '10%', y: '20%' },
-    { Icon: Star, delay: 2, x: '80%', y: '30%' },
+    { Icon: Brain, delay: 0, x: '10%', y: '20%' },
+    { Icon: Code, delay: 2, x: '80%', y: '30%' },
     { Icon: Zap, delay: 4, x: '20%', y: '70%' },
-    { Icon: Heart, delay: 1, x: '90%', y: '60%' },
-    { Icon: Code, delay: 3, x: '15%', y: '50%' },
-    { Icon: Palette, delay: 5, x: '75%', y: '80%' },
+    { Icon: Cpu, delay: 1, x: '90%', y: '60%' },
+    { Icon: Database, delay: 3, x: '15%', y: '50%' },
+    { Icon: Sparkles, delay: 5, x: '75%', y: '80%' },
   ];
 
   return (

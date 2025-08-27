@@ -19,10 +19,10 @@ export default function Header() {
 
   const navItems = [
     { name: 'How it works', href: '#how-it-works' },
-    { name: 'Benefits', href: '#benefits' },
     { name: 'Services', href: '#services' },
-    { name: 'Pricing', href: '#pricing' },
     { name: 'Portfolio', href: '#portfolio' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -44,7 +44,7 @@ export default function Header() {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            zyner
+            Shourya Sharma
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -69,12 +69,12 @@ export default function Header() {
             <div className="flex items-center space-x-2 text-xs">
               <div className="flex items-center text-gray-300">
                 <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-1"></div>
-                Online
+                Available
               </div>
-              <span className="text-gray-400">+1 415 727 5880</span>
+              <span className="text-gray-400">+91 98765 43210</span>
             </div>
             <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-4 py-1 rounded-full text-xs font-medium transition-all duration-300 hover:scale-105">
-              Book a call
+              Get Quote
             </Button>
           </div>
 
@@ -110,12 +110,12 @@ export default function Header() {
                 <div className="flex items-center space-x-2 text-sm mb-3">
                   <div className="flex items-center text-gray-300">
                     <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-1"></div>
-                    Online
+                    Available
                   </div>
-                  <span className="text-gray-400">+1 415 727 5880</span>
+                  <span className="text-gray-400">+91 98765 43210</span>
                 </div>
                 <Button className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white py-2 rounded-full text-sm font-medium">
-                  Book a call
+                  Get Quote
                 </Button>
               </div>
             </div>

@@ -9,7 +9,7 @@ export default function TestimonialQuote() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.7]); // Subtle fade for parallax depth
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.95]); // Slight zoom out on scroll
 
-  const quoteWords = '"If you\'re a YC founder looking for high-quality, reliable design support, Zyner is the way to go!"'.split(' ');
+  const quoteWords = '"Shourya transformed our business with AI integration that increased our efficiency by 300%. His full-stack expertise and AI knowledge are unmatched!"'.split(' ');
 
   return (
     <motion.section
@@ -107,26 +107,26 @@ export default function TestimonialQuote() {
             viewport={{ once: true }}
           >
             <Avatar className="w-16 h-16 shadow-lg hover:scale-110 transition-transform duration-300">
-              <AvatarImage src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Manil Lakabi" />
-              <AvatarFallback>ML</AvatarFallback>
+              <AvatarImage src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Rajesh Kumar" />
+              <AvatarFallback>RK</AvatarFallback>
             </Avatar>
             <div className="text-center md:text-left">
               <div className="flex items-center justify-center md:justify-start space-x-4 mb-2">
-                <h4 className="text-xl font-bold text-white">Manil Lakabi</h4>
+                <h4 className="text-xl font-bold text-white">Rajesh Kumar</h4>
                 <span className="text-gray-400">—</span>
-                <span className="text-gray-300">Co-founder</span>
+                <span className="text-gray-300">CTO</span>
               </div>
               <div className="flex items-center justify-center md:justify-start space-x-4">
                 <div className="flex items-center space-x-2">
                   <div className="w-8 h-8 bg-gray-800 rounded flex items-center justify-center shadow-sm">
-                    <span className="text-white font-bold text-sm">A</span>
+                    <span className="text-white font-bold text-sm">T</span>
                   </div>
-                  <span className="text-gray-300 text-sm">Foundry</span>
+                  <span className="text-gray-300 text-sm">TechCorp</span>
                 </div>
                 <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center shadow-sm">
-                  <span className="text-white font-bold text-sm">Y</span>
+                  <span className="text-white font-bold text-sm">AI</span>
                 </div>
-                <span className="text-gray-400 text-sm">(F24)</span>
+                <span className="text-gray-400 text-sm">(Fintech)</span>
               </div>
             </div>
             {/* Added Rating */}

@@ -87,7 +87,7 @@ export default function CreativeDesignStudio() {
   return (
     <>
       <Head>
-        <title>Creative Design Studio</title>
+        <title>AI & Full-Stack Development Services</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -97,26 +97,27 @@ export default function CreativeDesignStudio() {
           <div className="services-btn">Services</div>
         </div>
 
-        <h1 className="main-heading">Create Unlimited Creatives</h1>
-        <p className="sub-heading">Graphics, Videos & Web: We cover them all!</p>
+        <h1 className="main-heading">AI Integration & Full-Stack Development</h1>
+        <p className="sub-heading">From chatbots to enterprise applications: We build intelligent solutions!</p>
 
         <div className="tags-container">
-          <div className="tag">Logo Design</div>
-          <div className="tag">Brand Guides</div>
-          <div className="tag">Pitch decks</div>
-          <div className="tag">Landing pages</div>
-          <div className="tag">UI/UX Design</div>
-          <div className="tag">Web Design</div>
-          <div className="tag">Product Design</div>
-          <div className="tag">Email Templates</div>
-          <div className="tag">Framer Development</div>
-          <div className="tag">Social Media Posts & Ads</div>
-          <div className="tag">Billboards, Flyers & Posters</div>
-          <div className="tag">Custom Icons & Illustrations</div>
-          <div className="tag">Merchandise</div>
+          <div className="tag">AI Chatbots</div>
+          <div className="tag">Machine Learning</div>
+          <div className="tag">Natural Language Processing</div>
+          <div className="tag">Computer Vision</div>
+          <div className="tag">Predictive Analytics</div>
+          <div className="tag">React Applications</div>
+          <div className="tag">Node.js Backend</div>
+          <div className="tag">Python APIs</div>
+          <div className="tag">Database Design</div>
+          <div className="tag">Cloud Deployment</div>
+          <div className="tag">AI Model Training</div>
+          <div className="tag">Data Pipeline</div>
+          <div className="tag">API Integration</div>
+          <div className="tag">DevOps & CI/CD</div>
         </div>
 
-        <p className="note">And just about anything that can be designed in Adobe Creative Suite, Figma & Framer</p>
+        <p className="note">And everything in between using cutting-edge AI frameworks, modern web technologies, and cloud platforms</p>
 
         <div className="gallery-container">
           <div className="gallery-track animate-scroll" ref={trackRef}>
@@ -125,88 +126,88 @@ export default function CreativeDesignStudio() {
               <img
                 src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="AI Integration"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Minimal Brand Identity</div>
-                <div className="gallery-desc">Logo & Brand Guide</div>
+                <div className="gallery-title">AI-Powered Chatbot</div>
+                <div className="gallery-desc">Customer Support Automation</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="Full-Stack App"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Web Design</div>
-                <div className="gallery-desc">Framer Development</div>
+                <div className="gallery-title">E-commerce Platform</div>
+                <div className="gallery-desc">React + Node.js + AI</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1561070791-36c11767b26a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="AI Dashboard"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Mobile App UI</div>
-                <div className="gallery-desc">Product Design</div>
+                <div className="gallery-title">Analytics Dashboard</div>
+                <div className="gallery-desc">ML-Powered Insights</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="AI Workflow"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Social Campaign</div>
-                <div className="gallery-desc">Posts & Ads</div>
+                <div className="gallery-title">Workflow Automation</div>
+                <div className="gallery-desc">AI + Process Optimization</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="ML Model"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Editorial Design</div>
-                <div className="gallery-desc">Print & Digital</div>
+                <div className="gallery-title">Custom ML Model</div>
+                <div className="gallery-desc">TensorFlow + PyTorch</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="AI API"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Packaging Design</div>
-                <div className="gallery-desc">Product Merchandise</div>
+                <div className="gallery-title">AI API Gateway</div>
+                <div className="gallery-desc">OpenAI + LangChain</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1611532736597-8b8f8c62CDf0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="Full-Stack Platform"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Dashboard UI</div>
-                <div className="gallery-desc">Web Application</div>
+                <div className="gallery-title">SaaS Platform</div>
+                <div className="gallery-desc">Full-Stack + AI</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1588200901342-b7a5d472af42?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="AI Integration"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Brand Identity</div>
-                <div className="gallery-desc">Logo & Stationery</div>
+                <div className="gallery-title">Legacy System Integration</div>
+                <div className="gallery-desc">AI + Existing Infrastructure</div>
               </div>
             </div>
 
@@ -215,88 +216,88 @@ export default function CreativeDesignStudio() {
               <img
                 src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="AI Integration"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Minimal Brand Identity</div>
-                <div className="gallery-desc">Logo & Brand Guide</div>
+                <div className="gallery-title">AI-Powered Chatbot</div>
+                <div className="gallery-desc">Customer Support Automation</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="Full-Stack App"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Web Design</div>
-                <div className="gallery-desc">Framer Development</div>
+                <div className="gallery-title">E-commerce Platform</div>
+                <div className="gallery-desc">React + Node.js + AI</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1561070791-36c11767b26a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="AI Dashboard"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Mobile App UI</div>
-                <div className="gallery-desc">Product Design</div>
+                <div className="gallery-title">Analytics Dashboard</div>
+                <div className="gallery-desc">ML-Powered Insights</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="AI Workflow"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Social Campaign</div>
-                <div className="gallery-desc">Posts & Ads</div>
+                <div className="gallery-title">Workflow Automation</div>
+                <div className="gallery-desc">AI + Process Optimization</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="ML Model"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Editorial Design</div>
-                <div className="gallery-desc">Print & Digital</div>
+                <div className="gallery-title">Custom ML Model</div>
+                <div className="gallery-desc">TensorFlow + PyTorch</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="AI API"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Packaging Design</div>
-                <div className="gallery-desc">Product Merchandise</div>
+                <div className="gallery-title">AI API Gateway</div>
+                <div className="gallery-desc">OpenAI + LangChain</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1611532736597-8b8f8c62CDf0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="Full-Stack Platform"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Dashboard UI</div>
-                <div className="gallery-desc">Web Application</div>
+                <div className="gallery-title">SaaS Platform</div>
+                <div className="gallery-desc">Full-Stack + AI</div>
               </div>
             </div>
             <div className="gallery-item">
               <img
                 src="https://images.unsplash.com/photo-1588200901342-b7a5d472af42?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 className="gallery-img"
-                alt="Creative Work"
+                alt="AI Integration"
               />
               <div className="gallery-overlay">
-                <div className="gallery-title">Brand Identity</div>
-                <div className="gallery-desc">Logo & Stationery</div>
+                <div className="gallery-title">Legacy System Integration</div>
+                <div className="gallery-desc">AI + Existing Infrastructure</div>
               </div>
             </div>
           </div>
@@ -306,7 +307,7 @@ export default function CreativeDesignStudio() {
           <i className="fas fa-arrows-alt-h"></i> Scroll horizontally to view more
         </div>
 
-        <button className="see-more-btn">See More Work →</button>
+        <button className="see-more-btn">View Portfolio →</button>
       </div>
 
       <style jsx global>{`

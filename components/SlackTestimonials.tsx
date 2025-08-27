@@ -8,84 +8,84 @@ export default function SlackTestimonials() {
   const testimonials = [
     {
       name: 'arthur-querou',
-      message: '"Kudos to the whole team for such a quick turnaround!"',
+      message: '"The AI chatbot integration was flawless! Our customer support efficiency increased by 200%."',
       author: 'Arthur Querou',
       role: 'Founder @Vibe (W14)',
       image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
     },
     {
       name: 'rohit-jain',
-      message: '"Really nice job with the Web UI, it looks great, thanks for getting it done so quickly!"',
+      message: '"Shourya built our recommendation engine in record time. The AI insights are game-changing!"',
       author: 'Rohit Jain',
       role: 'Co-Founder @Snife (YC W25)',
       image: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
     },
     {
       name: 'rifath-rashid',
-      message: '"The wave is too good, don\'t share it with your other clients 😊"',
+      message: '"The full-stack AI application exceeded our expectations. Performance is outstanding!"',
       author: 'Rifath Rashid',
       role: 'Founder @Everyday',
       image: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
     },
     {
       name: 'aarav-patel',
-      message: '"Web UI is looking really good!"',
+      message: '"AI-powered analytics dashboard looks incredible! User engagement is through the roof."',
       author: 'Aarav Patel',
       role: 'Co-Founder @Snife (YC W25)',
       image: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
     },
     {
       name: 'caitlin-leksana',
-      message: '"Amazing, as always!"',
+      message: '"The natural language processing integration is mind-blowing! Users love it."',
       author: 'Caitlin Leksana',
       role: 'Founder @Fanashi (YC S24)',
       image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
     },
     {
       name: 'nicholas-cosereanu',
-      message: '"I love this! PERFECT! 👍"',
+      message: '"Shourya delivered our AI workflow automation ahead of schedule. Phenomenal work!"',
       author: 'Nicholas Cosereanu',
       role: 'Founder @Itra',
       image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
     },
     {
       name: 'samir-sen',
-      message: '"The video is great and story line 👍 !"',
+      message: '"The machine learning model accuracy is incredible! ROI exceeded our projections."',
       author: 'Samir Sen',
       role: 'CEO @Flair Lake (YC W24)',
       image: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
     },
     {
       name: 'caitlin-hassinger',
-      message: '"I love it! 👍"',
+      message: '"AI-powered content generation is revolutionary! Our team productivity skyrocketed."',
       author: 'Caitlin Hassinger',
       role: 'Content Director @Vibe (W19)',
       image: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
     },
     {
       name: 'mathieu-rihet',
-      message: '"Thank you for creating such a beautiful design!"',
+      message: '"The full-stack AI platform is a masterpiece! Scalability and performance are perfect."',
       author: 'Mathieu Rihet',
       role: 'Co-Founder @Woodfew (YC X25)',
       image: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
     },
     {
       name: 'netsune-nomura',
-      message: '"Pitchdeck looks great!"',
+      message: '"Computer vision integration is flawless! Our quality control is now 99.9% accurate."',
       author: 'Netsune Nomura',
       role: 'Country Manager @Unreal Carbon',
       image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
     },
     {
       name: 'manuel-rodriguez',
-      message: '"UI looks amazing!"',
+      message: '"The AI-powered search engine is incredible! User satisfaction increased by 150%."',
       author: 'Manuel Rodriguez Dao',
       role: 'Founder @Aulama',
       image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
     },
     {
       name: 'yonas-beehawred',
-      message: '"UI looks amazing!"',
+      message: '"Predictive analytics dashboard is a game-changer! Business insights are invaluable."',
       author: 'Yonas Beehawred',
       role: 'Co-Founder @StarSing (YC X25)',
       image: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
@@ -130,7 +130,7 @@ export default function SlackTestimonials() {
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Love on Slack
+            AI Success Stories
           </motion.h2>
         </div>
 
@@ -176,7 +176,7 @@ export default function SlackTestimonials() {
                   </div>
                   <div className="flex-shrink-0">
                     <div className="w-5 h-5 bg-orange-500 rounded flex items-center justify-center animate-pulse shadow-sm">
-                      <span className="text-white font-bold text-xs">Y</span>
+                      <span className="text-white font-bold text-xs">AI</span>
                     </div>
                   </div>
                 </div>
@@ -227,7 +227,7 @@ export default function SlackTestimonials() {
                   </div>
                   <div className="flex-shrink-0">
                     <div className="w-5 h-5 bg-orange-500 rounded flex items-center justify-center animate-pulse shadow-sm">
-                      <span className="text-white font-bold text-xs">Y</span>
+                      <span className="text-white font-bold text-xs">AI</span>
                     </div>
                   </div>
                 </div>

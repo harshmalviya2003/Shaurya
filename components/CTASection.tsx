@@ -27,9 +27,9 @@ export default function CTASection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            I guess all I'm trying to say is you should{' '}
+            Ready to transform your business with{' '}
             <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-              smash the damn button.
+              AI-powered solutions?
             </span>
           </motion.h2>
 
@@ -41,7 +41,7 @@ export default function CTASection() {
             viewport={{ once: true }}
           >
             <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-orange-500/25">
-              Book a call with Sehan
+              Get Free Consultation
             </Button>
           </motion.div>
 
@@ -52,7 +52,7 @@ export default function CTASection() {
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            Or spend the next 30 mins going over this for month.
+            Let's discuss how AI can revolutionize your workflow and boost productivity.
           </motion.p>
         </motion.div>
       </div>

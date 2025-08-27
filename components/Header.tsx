@@ -27,20 +27,20 @@ export default function Header() {
 
   return (
     <motion.header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-4 inset-x-0 mx-auto w-[90%] max-w-[800px] z-50 transition-all duration-300 rounded-full shadow-lg ${
         isScrolled
-          ? 'bg-black/80 backdrop-blur-lg border-b border-white/10'
-          : 'bg-transparent'
+          ? 'bg-black/60 backdrop-blur-xl border border-white/10'
+          : 'bg-black/40 backdrop-blur-md'
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-12 md:h-14"> {/* Reduced height for smaller header */}
           {/* Logo */}
           <motion.div
-            className="text-2xl font-bold text-white"
+            className="text-xl md:text-2xl font-bold text-white"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
@@ -48,12 +48,12 @@ export default function Header() {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             {navItems.map((item, index) => (
               <motion.a
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
+                className="text-gray-300 hover:text-white transition-colors duration-200 text-xs md:text-sm font-medium"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * index }}
@@ -65,15 +65,15 @@ export default function Header() {
           </nav>
 
           {/* Contact Info & CTA */}
-          <div className="hidden lg:flex items-center space-x-6">
-            <div className="flex items-center space-x-2 text-sm">
+          <div className="hidden lg:flex items-center space-x-4">
+            <div className="flex items-center space-x-2 text-xs">
               <div className="flex items-center text-gray-300">
-                <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-1"></div>
                 Online
               </div>
               <span className="text-gray-400">+1 415 727 5880</span>
             </div>
-            <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105">
+            <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-4 py-1 rounded-full text-xs font-medium transition-all duration-300 hover:scale-105">
               Book a call
             </Button>
           </div>
@@ -83,19 +83,19 @@ export default function Header() {
             className="lg:hidden text-white p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <motion.div
-            className="lg:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-lg border-b border-white/10"
+            className="lg:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-xl border border-white/10 rounded-b-xl mt-1"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
           >
-            <div className="px-4 py-6 space-y-4">
+            <div className="px-4 py-4 space-y-3">
               {navItems.map((item) => (
                 <a
                   key={item.name}
@@ -106,10 +106,10 @@ export default function Header() {
                   {item.name}
                 </a>
               ))}
-              <div className="pt-4 border-t border-white/10">
-                <div className="flex items-center space-x-2 text-sm mb-4">
+              <div className="pt-3 border-t border-white/10">
+                <div className="flex items-center space-x-2 text-sm mb-3">
                   <div className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                    <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-1"></div>
                     Online
                   </div>
                   <span className="text-gray-400">+1 415 727 5880</span>

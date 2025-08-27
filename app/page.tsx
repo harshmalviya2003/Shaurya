@@ -11,6 +11,7 @@ import SlackTestimonials from '@/components/SlackTestimonials';
 import Footer from '@/components/Footer';
 import FloatingElements from '@/components/FloatingElements';
 import InteractiveBackground from '@/components/InteractiveBackground';
+import DesignServicesMarquee from '@/components/services';
 
 export default function Home() {
   return (
@@ -21,8 +22,9 @@ export default function Home() {
       <main>
         <Hero />
         <SkillsMarquee />
+        <DesignServicesMarquee /> 
         <HowItWorks />
-        <TestimonialQuote />
+        {/* <TestimonialQuote /> */}
         <SlackTestimonials />
         <FAQ />
         <CTASection />
